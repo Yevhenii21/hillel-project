@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.body {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-style: 15px;
+    color: #fff;
+}
+.container {
+    // max-width: 1320px;
+    min-width: 375px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+// .header::before {
+//     content: '';
+//     display: inline-block;
+//     width: 6px;
+//     height: 6px;
+//     border-radius: 50%;
+//     background-color: #E6E6F0;
+//     margin-right: 8px;
+// }

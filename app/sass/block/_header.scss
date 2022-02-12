@@ -1,0 +1,78 @@
+.header {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr min-content;
+    grid-template-areas: "top top"
+                         "logobox menu";
+    margin: 0 -15px;
+    &__lang-box {
+        &-link {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            padding: 5px 7px;
+        }
+    
+        &-link:hover {
+            background: #F0145A;
+            border-radius: 8px;
+        }
+    }
+    &__fb,
+    &__adress {
+        display: none;
+    }
+    &__tel {
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        line-height: 20px;
+        align-self: center;
+    }
+    &__top {
+        grid-area: top;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    &__logo-box {
+        grid-area: logobox;
+        display: inline-flex;
+        align-items: center;
+        position: relative;
+        
+        &-text {
+            font-size: 20px;
+            line-height: 24px;
+            color: #fff;
+            position: absolute;
+            left: 72px;
+            bottom: 8px;
+    }
+}
+    &__menu {
+        grid-area: menu;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        height: 34px;
+        width: 32px;
+        justify-content: center;
+        align-items: center;
+        
+        &-circle {
+            background-color: #fff;
+            width: 18px;
+            height: 1px;
+            margin-bottom: 4px;
+        }
+    }
+}
+@media (min-width: 768px) {
+    &__fb,
+    &__adress {
+        display: block;
+    }
+}

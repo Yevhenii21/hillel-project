@@ -1,0 +1,44 @@
+.intro-box {
+    text-align: center;
+    align-content: center;
+
+    &__arrow-button {
+        border-radius: 50%;
+        border: 2px solid rgba(#FFFFFF, 0.5);
+        background-color: transparent;
+        padding: 24px 24px;
+        margin: 160px 0 30px;
+        position: relative;
+        &:hover {
+            border-color: rgba(#F0145A, 0.5);
+        }
+        &-img {
+            border-top: 2px solid #FFFFFF;
+            border-right: 2px solid #FFFFFF;
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            transform: rotate(135deg);
+            bottom: 18px;
+            right: 15px;
+        }
+        &:hover > &-img {
+            border-color: #F0145A;
+        }
+        // &-img {
+        //     margin: 18px 12px 15px;
+        //     &:hover path{
+        //         stroke: #F0145A;
+        //     }
+        // }
+    }
+
+    &__title {
+        color: #fff;
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 46px;
+        width: 50%;
+        margin: 160px auto 0;
+    }
+}
